@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-z$qr2!s#=4$1x#e#ikv-uq@pd$$k7#=ba=j-#(-qe49t@fkc4_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgresql://neondb_owner:npg_akVw1O6Kudbs@ep-late-surf-a2tbyfai.eu-central-1.aws.neon.tech/stick_stank_wrath_437453"))
+    'default': dj_database_url.parse(os.environ.get("postgresql://neondb_owner:npg_akVw1O6Kudbs@ep-late-surf-a2tbyfai.eu-central-1.aws.neon.tech/rover_sport_debug_984818"))
 }
 
 # Password validation
