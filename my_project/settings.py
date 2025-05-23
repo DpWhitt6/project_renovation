@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z$qr2!s#=4$1x#e#ikv-uq@pd$$k7#=ba=j-#(-qe49t@fkc4_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com']
 
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgresql://neondb_owner:npg_akVw1O6Kudbs@ep-late-surf-a2tbyfai.eu-central-1.aws.neon.tech/rover_sport_debug_984818"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
